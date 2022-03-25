@@ -103,6 +103,12 @@ a{
   color: #333;
   line-height: 30px;
 }
+.title .view-resume {
+    font-size: 13px;
+    padding-right: 20px;
+    text-decoration: underline;
+    line-height: 30px;
+}
 .hd .profile{
     text-align: right;
     display: flex;
