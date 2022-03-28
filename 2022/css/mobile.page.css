@@ -1,6 +1,9 @@
 body{
     font-weight: 200;
 }
+.hd {
+    background-attachment: initial;
+}
 .container {
     margin: 0 12px;
 }
@@ -118,4 +121,5 @@ a.photo .desc .date{
 }
 .ft{
     background-size: auto 100%;
+    background-attachment: initial;
 }
