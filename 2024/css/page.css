@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  color: #f2f2f2;
+  font-family: "Maven Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #8e2de2;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: #ddd;
+  text-decoration: none;
+}
+.hide {
+  display: none !important;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  right: -20px;
+  height: 100%;
+  background: url(https://img-1252472236.cos.ap-beijing.myqcloud.com/bg-2024.jpg)
+    no-repeat;
+  background-size: cover;
+  filter: blur(10px);
+}
+
+.main {
+  position: absolute;
+  top: 70px;
+  bottom: 20px;
+  left: 50%;
+  background-color: #fff;
+  width: 75%;
+  translate: -50% 0;
+  box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.15);
+}
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 60px;
+  font-size: 14px;
+}
+.sidebar ul {
+  top: 60px;
+}
+.sidebar ul li {
+  list-style: none;
+  color: #666;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  margin: 20px 0;
+  padding-right: 18px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.sidebar ul li:hover {
+  color: #111;
+}
+.sidebar ul li.active {
+  box-sizing: border-box;
+  border-right: 3px solid #4a00e0;
+  color: #111;
+}
+.copyright {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+  writing-mode: tb-rl;
+  padding-right: 19px;
+  transform: rotate(-180deg);
+}
+
+.main .section {
+  display: none;
+  position: absolute;
+  left: 60px;
+  right: 0;
+  top: 0px;
+  bottom: 0px;
+}
+.main .section.show {
+  display: block;
+}
+
+.section .profile {
+  position: absolute;
+  width: 43.5%;
+  height: 100%;
+  background: url(https://img-1252472236.cos.ap-beijing.myqcloud.com/WechatIMG115-2.jpg)
+    no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.section .profile h1 {
+  font-weight: 1000;
+}
+.section .profile h1.name {
+  position: absolute;
+  width: 100%;
+  bottom: 220px;
+  color: #fff;
+  font-size: 80px;
+}
+.section .profile h2 {
+  position: absolute;
+  width: 100%;
+  color: #f3f3f3;
+  bottom: 180px;
+  font-size: 24px;
+  font-weight: 200;
+}
+.section .desc {
+  position: absolute;
+  left: 43.5%;
+  right: 0;
+  height: 100%;
+  color: #444;
+}
+.section .desc h2 {
+  font-size: 60px;
+  margin: 120px 60px 0 60px;
+  color: #ddd;
+}
+.section .desc p {
+  padding: 10px 60px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #000;
+}
+
+.section .skill-charts {
+  margin-left: 60px;
+  width: 300px;
+}
+.section .skill-charts span {
+  line-height: 24px;
+  margin-left: 10px;
+}
+.section .skill-charts .icon-list {
+  margin: 10px 0;
+  vertical-align: middle;
+  display: flex;
+}
+.section .skill-charts .icon-list img {
+  width: 24px;
+  margin: 0 5px;
+}
+.section .skill-charts .progress-bar {
+  height: 12px;
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #8e2de2;
+}
+.section .skill-charts .JS .progress-bar {
+  width: 100%;
+}
+.section .skill-charts .android .progress-bar {
+  width: 30%;
+}
+.section .skill-charts .design .progress-bar {
+  width: 50%;
+}
+.section .desc .ft {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.section .desc .ft a {
+  color: #444;
+}
+.section .desc .ft a:hover {
+  color: #4a00e0;
+}
+.section .desc .ft .icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  background: none;
+  fill: currentColor;
+}
+.section .items-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    left: 43.5%;
+    width: 56.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.section .items-wrap .items{
+    display: flex;
+    flex: 1;
+}
+.section .cover {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+}
+.photo {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    height: 100%;
+    background: #fff;
+}
+.photo.large {
+    flex: 50%;
+}
+.photo.last {
+    margin-top: -198px;
+}
+.photo .image-bg{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(30px);
+    /* this is needed so Safari keeps sharp edges */
+    transform: scale(1);
+}
+.photo img {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    transition: opacity .2s ease-in .25s;
+}
+.photo .image-bg.loaded{
+    filter: blur(0px);
+}
+
+a.photo .desc{
+    display: none;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity .35s ease;
+    color: #fff;
+    background-color: rgba(0,0,0,.55);
+}
+a.photo .desc p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+a.photo .desc .date{
+    font-size: 14px;
+}
+a.photo:hover .desc{
+    opacity: 1;
+}
+.section.keynotes{
+    background-color: #fff;
+}
+.section.keynotes h2 {
+    width: 960px;
+    margin: 0 auto;
+    color: #000;
+    padding-top: 60px;
+}
+.main .slideshow {
+  width: 960px;
+  height: 80%;
+  margin: 0 auto;
+}
+.slideshow {
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slide {
+  position: relative;
+  flex: 50%;
+  height: 50%;
+  overflow: hidden;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+}
+.slide__img {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+    bottom: 10px;
+	background-size: cover;
+	background-position: 50% 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.slidenav__item:focus {
+  outline: none;
+}
+
+.slidenav__item:hover {
+  color: #fff;
+}
+
+.shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: #7303c0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.slide__title {
+  position: relative;
+  font-size: 20px;
+  margin: 0;
+  cursor: default;
+  line-height: 1;
+  color: #fff;
+}
+
+.slide__desc {
+  position: relative;
+  font-size: 14px;
+  margin: 0 0 1em 0;
+  cursor: default;
+  color: #f3f3f3;
+  padding: 1em;
+  text-align: center;
+}
+
+.slide__link {
+  display: inline-block;
+  position: relative;
+  padding: 0.3em 0.6em;
+  display: block;
+  color: #000;
+  background: #fff;
+  transition: color 0.3s, background-color 0.3s;
+  font-size: 13px;
+}
+
+.slide__link:hover {
+  color: var(--color-slink-hover);
+  background: #000;
+}
+.keynotes .slideshow .slide:first-child .slide__title {
+  color: #000;
+}
+.keynotes .slideshow .slide:first-child .slide__link {
+  background-color: #000;
+  color: #fff;
+}

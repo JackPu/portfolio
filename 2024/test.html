@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Jack Pu's Profile</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="expires" content="Sun, 21 Jul 2020 1:00:00 GMT" />
+    <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="white" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="dns-prefetch" href="//code.jquery.com">
+    <link rel="dns-prefetch" href="//gw.alicdn.com">
+    <link rel="stylesheet" href="./css/page.css?v=sw" />
+    <link rel="stylesheet" media="(max-width: 768px)"  href="./css/mobile.page.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/jquery-jvectormap-2.0.3.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Julius+Sans+One" rel="stylesheet">
+    <style>
+    body {
+        background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+<video autoplay="autoplay" width="200" controls></video>
+<button width="120">PLAY</button>
+<script>
+    var source = [
+        'https://img-1252472236.cos.ap-beijing.myqcloud.com/11%E6%9C%888%E6%97%A5(2).mp4',
+        'https://ark.tubi.video/v2/030ed64ede337170027e21ae2a51b32f/76a64e57-6106-49ba-9f09-c71ffaa4ad70/854x480_1200k.mp4',
+    ];
+    const videoEl = document.querySelector('video');
+    const button = document.querySelector('button');
+    var index = 0;
+    button.addEventListener('click', function () {
+        videoEl.src = source[index % 2];
+        videoEl.play();
+    });
+    videoEl.addEventListener('ended', function () {
+        index += 1;
+        videoEl.src = source[index % 2];
+    });
+</script>
+</body>
+
+</html>
