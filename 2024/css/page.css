@@ -221,6 +221,59 @@ a {
   background: none;
   fill: currentColor;
 }
+.section.resume {
+  color: #333;
+}
+.section.resume h2{
+  color: #4a00e0;
+  font-family: Helvetica;
+  font-weight: 1000;
+}
+.section.resume .items {
+  position: absolute;
+  width: 56.5%;
+  top: 40px;
+  left: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.section.resume .items .item{
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.section.resume .items .item img{
+  width: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0,0,0,.15);
+  margin-right: 10px;
+}
+.section.resume .memory {
+  position: absolute;
+  left: 56.5%;
+  right:0;
+  top: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+.section.resume .memory .mask {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: -webkit-linear-gradient(
+    to top,
+    #4a00e0,
+    rgba(0,0,0, 0)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #4a00e0,
+    rgba(0,0,0, 0)
+  );
+}
 .section .items-wrap {
     position: absolute;
     left: 0;
@@ -234,13 +287,36 @@ a {
 .section .items-wrap .items{
     display: flex;
     flex: 1;
+    margin-bottom: 2px;
 }
 .section .cover {
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 43.5%;
     height: 100%;
     background-size: auto 100%;
+    color: #444;
+}
+.section .cover .container {
+    margin: 20px 10px;
+}
+.section .cover img {
+    width: 100%;
+}
+.section .cover .container h2{
+    padding: 20px 0;
+}
+
+.section .tags {
+    margin-top: 10px;
+}
+.section .tags .tag{
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #4a00e0;
+    font-size: 13px;
+    color: #fff;
+    line-height: 20px;
 }
 .photo {
     display: block;
@@ -249,6 +325,8 @@ a {
     flex: 1;
     height: 100%;
     background: #fff;
+    box-sizing: border-box;
+    border-right: 2px solid #fff;
 }
 .photo.large {
     flex: 50%;
@@ -297,7 +375,7 @@ a.photo .desc{
     background-color: rgba(0,0,0,.55);
 }
 a.photo .desc p{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: #fff;
 }
