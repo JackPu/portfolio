@@ -10,8 +10,8 @@ html{
 body{
     font-size: 16px;
     color: #f2f2f2;
-    font-family: "Maven Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 200;
+    font-family: "Inter", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
     width: 100%;
     height: 100%;
     -webkit-overflow-scrolling: touch;
@@ -68,7 +68,7 @@ a{
     background-size: cover;
     box-shadow: 2px 5px 5px rgba(0,0,0, .25);
     background-attachment: fixed;
-    
+
 }
 .container {
     position: relative;
@@ -130,7 +130,7 @@ a{
   background-color: transparent;
   transition: box-shadow .3s ease-in;
 }
-.hd .btn-view-more:hover { 
+.hd .btn-view-more:hover {
   box-shadow: 0 4px 6px rgba(0,0,0, .25);
  }
 .avatar-box{
@@ -305,7 +305,7 @@ box-shadow: 0 8px 8px rgba(0,0,0,.25);
     height: 100%;
     filter: blur(30px);
     /* this is needed so Safari keeps sharp edges */
-    transform: scale(1);  
+    transform: scale(1);
 }
 .photo img {
     position: absolute;
@@ -625,7 +625,7 @@ a.photo:hover .desc{
 }
 .main .map h2:after {
     border-color: rgba(255,255,255, .5);
-    
+
 }
 .ft{
   overflow: hidden;

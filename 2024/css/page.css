@@ -10,8 +10,8 @@ html {
 body {
   font-size: 16px;
   color: #f2f2f2;
-  font-family: "Maven Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-family:  "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
   width: 100%;
   height: 100%;
   -webkit-overflow-scrolling: touch;
@@ -126,7 +126,7 @@ a {
 }
 
 .section .profile h1 {
-  font-weight: 1000;
+  font-weight: 900;
 }
 .section .profile h1.name {
   position: absolute;
@@ -138,10 +138,11 @@ a {
 .section .profile h2 {
   position: absolute;
   width: 100%;
-  color: #f3f3f3;
+  color: #fff;
   bottom: 180px;
   font-size: 24px;
   font-weight: 200;
+  opacity: .7;
 }
 .section .desc {
   position: absolute;
@@ -161,7 +162,9 @@ a {
   line-height: 40px;
   color: #000;
 }
-
+.section .desc strong {
+  color: #4a00e0;
+}
 .section .skill-charts {
   margin-left: 60px;
   width: 300px;
@@ -225,9 +228,12 @@ a {
   color: #333;
 }
 .section.resume h2{
-  color: #4a00e0;
-  font-family: Helvetica;
-  font-weight: 1000;
+  font-weight: 900;
+  display: flex;
+  padding-bottom: 10px;
+}
+.section.resume h3 {
+  color: #888;
 }
 .section.resume .items {
   position: absolute;
@@ -246,7 +252,7 @@ a {
   width: 30px;
   border-radius: 5px;
   box-shadow: 0 2px 2px rgba(0,0,0,.15);
-  margin-right: 10px;
+  margin-right:15px;
 }
 .section.resume .memory {
   position: absolute;

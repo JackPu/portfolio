@@ -9,7 +9,9 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="yes" name="apple-touch-fullscreen">
     <meta content="white" name="apple-mobile-web-app-status-bar-style">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Maven+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="https://img1.wxzxzj.com/vued2239887540d958323c4c51d706b9f292.png" type="image/x-icon"
     />
     <link
@@ -57,7 +59,6 @@
         <li class="active">Home</li>
         <li>Resume</li>
         <li>Design</li>
-        <li>Slide</li>
         <li>Plans</li>
       </ul>
     </div>
@@ -133,8 +134,8 @@
       <div class="items">
         <div class="item">
           <h2><img alt="tubi" title="tubi" src="data:image/png;base64,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">Tubi.TV</h2>
-          <h3>2023-now</h3>
-          <p>I work at OTT Player Team. I focus on the QoS and QoE of VOD;<br/> I am trying to decrease the prod errors and increase the join time of content.</p>
+          <h3>2023-Now</h3>
+          <p>I am working at OTT Player Team. I focus on the QoS and QoE of VOD;<br/> I am trying to decrease the prod errors and increase the join time of content.</p>
           <div class="tags">
             <span class="tag">Typescript</span>
             <span class="tag">Web Media</span>
@@ -313,6 +314,11 @@
       </div>
     </div>
 
+
+
+    <div class="section plans">
+
+    </div>
     <div class="section keynotes">
       <div class="slideshow">
         <div class="slides">
@@ -342,10 +348,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="section plans">
-
     </div>
 
   </div>
