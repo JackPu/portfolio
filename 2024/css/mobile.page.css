@@ -1,5 +1,124 @@
 body{
     font-weight: 200;
+    overflow: hidden;
+}
+.main {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+.main .sidebar {
+    height: 45px;
+    width: 100%;
+    z-index: 10;
+}
+.copyright {
+    display: none;
+}
+.sidebar ul  {
+    text-align: center;
+}
+.sidebar ul li {
+    display: inline-block;
+    margin: 0 12px;
+    padding: 5px 12px;
+    font-size: 12px;
+    color:#999;
+    transform: rotate(0);
+    writing-mode: horizontal-tb;
+}
+.sidebar ul li.active {
+    color: #4a00e0;
+    border-bottom: 2px solid #4a00e0;
+    border-right-width: 0px;
+}
+.main .section {
+    left: 0;
+}
+.section .profile {
+    width: 100%;
+    background-color: #fff;;
+}
+.section .profile h1.name {
+    font-size: 36px;
+    top: 80px;
+    bottom: auto;
+    color: #333;
+}
+.section .profile h2 {
+    display: none;
+}
+.section .desc {
+    left: 24px;
+    right: 24px;
+    top: 160px;
+}
+.section .desc h2 {
+    display: none;
+}
+.section .desc p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px 20px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+
+.section .skill-charts {
+    margin-left: 10px;
+    color: #999;
+}
+
+.section.resume .memory {
+    left: 0;
+    background-image: none !important;
+}
+.section.resume .items {
+    z-index: 12;
+    left: 4px;
+    right: 4px;
+    top: 60px;
+    width: auto;
+}
+.section.resume .items .item {
+    background-color: #fff;
+    line-height: 24px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.section.resume .items .item img {
+    width: 24px;
+}
+.section.resume h2 {
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+.section.resume p {
+    line-height: 20px;
+    font-size: 13px;
+}
+.section .tags {
+    margin-top: 0px;
+}
+.section .tags .tag {
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    line-height: 16px;
+}
+.section .cover {
+    display: none;
+}
+.section .items-wrap {
+    left: 0;
+    width: 100%;
+    top: 45px;
+}
+.photo.large, .photo.last, .photo {
+    margin: 2px;
 }
 .hd {
     background-attachment: initial;
@@ -58,10 +177,8 @@ body{
 .photo{
     float: none;
     width: auto;
-    margin: 15px;
+    margin: 0;
     height: auto;
-    border-radius: 10px;
-    padding-top: 62.26%;
 }
 a.photo .desc {
     display: block;
@@ -91,12 +208,12 @@ a.photo .desc p {
 }
 a.photo .desc .date{
     position: absolute;
-    left: 15px;
+    left: 5px;
     bottom: 10px;
     display: inline-block;
-    padding: 5px 10px;
-    border-radius: 20px;
+    padding: 3px 5px;
     background: rgba(0,0,0, .65);
+    font-size: 12px;
 }
 .main .self-introduce p {
     padding: 15px;
