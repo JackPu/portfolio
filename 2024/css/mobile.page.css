@@ -38,7 +38,7 @@ body{
 }
 .section .profile {
     width: 100%;
-    background-color: #fff;;
+    background: #fff;;
 }
 .section .profile h1.name {
     font-size: 36px;
