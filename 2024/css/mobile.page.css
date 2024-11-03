@@ -2,6 +2,11 @@ body{
     font-weight: 200;
     overflow: hidden;
 }
+.bg{
+    position: absolute;
+    left:0;
+    right: 0;
+}
 .main {
     top: 0;
     bottom: 0;
@@ -53,6 +58,7 @@ body{
     left: 24px;
     right: 24px;
     top: 160px;
+    height: auto;
 }
 .section .desc h2 {
     display: none;
@@ -70,7 +76,15 @@ body{
     margin-left: 10px;
     color: #999;
 }
-
+.section .desc .ft {
+    position: relative;
+    bottom: 0;
+    top: 40px;
+}
+.section .desc .ft .icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 .section.resume .memory {
     left: 0;
     background-image: none !important;
